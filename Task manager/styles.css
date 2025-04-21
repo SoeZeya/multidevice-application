@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-top: 0;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#taskContainer {
+    min-height: 200px;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 12px;
+    background: #f8f9fa;
+    margin: 8px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+}
+
+li:hover {
+    background: #e9ecef;
+}
+
+.task-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+li button {
+    background: #e74c3c;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+li button:hover {
+    background: #c0392b;
+}
+
+.task-checkbox {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
