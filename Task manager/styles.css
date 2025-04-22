@@ -1,3 +1,4 @@
+/* Basic page styling - centers content with a clean background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f5f7fa;
 }
 
+/* Container for the todo app - white card with shadow */
 .container {
     background: white;
     padding: 25px;
@@ -18,18 +20,21 @@ body {
     max-width: 500px;
 }
 
+/* Main heading style */
 h1 {
     color: #2c3e50;
     margin-top: 0;
     text-align: center;
 }
 
+/* Layout for input and add button */
 .input-group {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
+/* Input field styling */
 input {
     flex: 1;
     padding: 10px;
@@ -38,6 +43,7 @@ input {
     font-size: 16px;
 }
 
+/* Button styling - primary action */
 button {
     padding: 10px 16px;
     border: none;
@@ -49,14 +55,17 @@ button {
     transition: background 0.2s;
 }
 
+/* Button hover effect */
 button:hover {
     background: #2980b9;
 }
 
+/* Container where tasks will be displayed */
 #taskContainer {
     min-height: 200px;
 }
 
+/* Message shown when no tasks exist */
 #emptyMessage {
     text-align: center;
     color: #7f8c8d;
@@ -64,12 +73,14 @@ button:hover {
     display: none;
 }
 
+/* Task list styling - remove default bullets */
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* Individual task item styling */
 li {
     padding: 12px;
     background: #f8f9fa;
@@ -81,30 +92,36 @@ li {
     transition: all 0.2s;
 }
 
+/* Task hover effect */
 li:hover {
     background: #e9ecef;
 }
 
+/* Text within task - handles long words */
 .task-text {
     flex: 1;
     word-break: break-word;
 }
 
+/* Completed task styling */
 .completed {
     text-decoration: line-through;
     color: #95a5a6;
 }
 
+/* Delete button within task */
 li button {
     background: #e74c3c;
     padding: 6px 10px;
     font-size: 12px;
 }
 
+/* Delete button hover effect */
 li button:hover {
     background: #c0392b;
 }
 
+/* Checkbox styling */
 .task-checkbox {
     cursor: pointer;
     width: 18px;
